@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="addon">
+  <id>dev.dimonaco.etc_hosts_cockpit_app_demo</id>
+  <metadata_license>CC0-1.0</metadata_license>
+  <name>Etc Hosts Demo</name>
+  <summary>Cockpit application demo for Cockpit on steroids talk</summary>
+  <description>
+    Hello moto
+  </description>
+  <extends>org.cockpit_project.cockpit</extends>
+  <launchable type="cockpit-manifest">etc-hosts-app-demo</launchable>
+  <url type="homepage">https://github.com/CDimonaco/etc-hosts-cockpit-app-demo</url>
+  <url type="bugtracker">https://github.com/CDimonaco/etc-hosts-cockpit-app-demo/issues</url>
+  <update_contact>carmine.dimonaco_AT_gmail.com</update_contact>
+  <developer id="dev.dimonaco">
+    <name>Carmine Di Monaco</name>
+  </developer>
+</component>
