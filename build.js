@@ -27,7 +27,7 @@ if (args.rsync)
     process.env.RSYNC = args.rsync;
 
 // List of directories to use when using import statements
-const nodePaths = ['pkg/lib'];
+const nodePaths = ['pkg/lib', 'src/components','src/lib'];
 const outdir = 'dist';
 
 // Obtain package name from package.json
