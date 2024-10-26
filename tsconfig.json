@@ -1,22 +1,39 @@
 {
   "compilerOptions": {
+    "outDir": "build/dist",
+    "lib": ["es6", "dom"],
     "allowJs": true,
-    "checkJs": true,
-    "exactOptionalPropertyTypes": true,
     "jsx": "react",
-    "lib": [
-      "dom",
-      "es2020"
-    ],
+    "rootDir": "src",
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "noImplicitAny": true,
     "paths": {
-        "*": ["./pkg/lib/*"]
+      "*": ["./pkg/lib/*"]
     },
-    "moduleResolution": "bundler",
-    "noEmit": true,
+    "assumeChangesOnlyAffectDirectDependencies": true,
+    "target": "es2015",
+    "module": "es2015",
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "importHelpers": true,
+    "composite": true,
+    "sourceMap": true,
+    "declarationMap": true,
     "strict": true,
-    "target": "es2020"
+    "strictNullChecks": false,
+    "isolatedModules": true
   },
-  "include": [
-    "src/**/*"
-  ]
+  "include": ["src/**/*"],
+  "exclude": [
+    "node_modules",
+    "build",
+    "scripts",
+    "acceptance-tests",
+    "webpack",
+    "jest",
+    "src/setupTests.ts"
+  ],
+  "types": ["typePatches"]
 }
